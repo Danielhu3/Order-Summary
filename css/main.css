@@ -34,6 +34,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .card {
@@ -47,7 +48,6 @@ body {
   background-color: #fff;
   width: 40rem;
   border-radius: 2rem;
-  margin: 9rem;
 }
 
 .card .card-img {
@@ -150,5 +150,33 @@ body {
 .attribution a {
   text-decoration: none;
   color: #3e52a3;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    width: 90vw;
+  }
+  .body {
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

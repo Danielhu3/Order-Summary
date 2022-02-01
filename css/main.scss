@@ -37,6 +37,8 @@ body {
   align-items: center;
 
   flex-direction: column;
+
+  overflow: hidden;
 }
 
 .card {
@@ -48,7 +50,7 @@ body {
 
   border-radius: 2rem;
 
-  margin: 9rem;
+  //margin: 9rem;
 
   .card-img {
     display: flex;
@@ -150,5 +152,36 @@ body {
   a {
     text-decoration: none;
     color: hsl(228, 45%, 44%);
+  }
+}
+
+// responsive
+
+@media screen and(max-width:1024px) {
+  .card {
+    margin: 4rem;
+  }
+}
+
+@media screen and(max-width:768px) {
+  .card {
+    margin: 1rem;
+  }
+}
+
+@media screen and(max-width:425px) {
+  .card {
+    width: 90vw;
+  }
+
+  .body {
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and(max-width:320px) {
+  html {
+    font-size: 50%;
   }
 }
