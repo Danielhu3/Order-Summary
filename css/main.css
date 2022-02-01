@@ -47,6 +47,7 @@ body {
   background-color: #fff;
   width: 40rem;
   border-radius: 2rem;
+  margin: 9rem;
 }
 
 .card .card-img {
@@ -142,11 +143,12 @@ body {
 }
 
 .attribution {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .attribution a {
+  text-decoration: none;
   color: #3e52a3;
 }
 /*# sourceMappingURL=main.css.map */
